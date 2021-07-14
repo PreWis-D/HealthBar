@@ -8,9 +8,9 @@ public class Player : MonoBehaviour
 {
     private Animator _animator;
 
-    public event UnityAction HealthChanged;
-
     public float Health { get; private set; } = 100f;
+
+    public event UnityAction HealthChanged;
 
     private void Start()
     {
